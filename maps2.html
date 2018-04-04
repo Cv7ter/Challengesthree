@@ -18,7 +18,7 @@
       text-align: center;
     }
   </style>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/AIzaSyD3lAfwIEK5TO_UOCm9mSNwduiA0-NjdFA/js">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3lAfwIEK5TO_UOCm9mSNwduiA0-NjdFA">
 </script>
 
 <script>
@@ -78,7 +78,7 @@
   // Make the weather request
   var getWeather = function(northLat, eastLng, southLat, westLng) {
     gettingData = true;
-    var requestString = "https://api.openweathermap.org/data/2.5/box/city?bbox="
+    var requestString = "http://api.openweathermap.org/data/2.5/box/city?bbox="
                         + westLng + "," + northLat + "," //left top
                         + eastLng + "," + southLat + "," //right bottom
                         + map.getZoom()
